@@ -2,32 +2,43 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaLinkedin, FaInstagram, FaGithub, FaWhatsapp } from "react-icons/fa";
+import profile from "../assets/My_image.jpg";
 
 const Hero: React.FC = () => {
   return (
     <section className="relative w-full h-screen flex flex-col justify-center items-center px-6 md:px-16 lg:px-40  text-white">
       {/* Navigation Buttons */}
       <div className="absolute top-6 right-6 flex space-x-6">
-        {["about", "projects", "services", "contact"].map((section) => (
-          <Link
-            key={section}
-            to={section}
-            smooth={true}
-            duration={500}
-            className="cursor-pointer text-sm md:text-base hover:text-blue-400 transition-colors"
-          >
-            {section.charAt(0).toUpperCase() + section.slice(1)}
-          </Link>
-        ))}
+        {["about", "projects", "services", "contact", "My Resume"].map(
+          (section) => (
+            <Link
+              key={section}
+              to={section}
+              smooth={true}
+              duration={500}
+              className="cursor-pointer text-sm md:text-base hover:text-blue-400 transition-colors"
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </Link>
+          )
+        )}
+        {/* <a
+          href="https://my-resume-zeta-smoky.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer text-sm md:text-base hover:text-blue-400 transition-colors"
+        >
+          My Resume
+        </a> */}
       </div>
 
       <div className="flex flex-col md:flex-row-reverse items-center md:justify-between w-full gap-10 md:gap-24">
         {/* Profile Image on the Right */}
         <div className="flex-shrink-0">
           <img
-            src="/path/to/profile-image.jpg"
+            src={profile}
             alt="Daberechi Levi Nwachukwu"
-            className="rounded-full w-75 h-75 object-cover shadow-lg"
+            className="rounded-full w-[27rem] h-[25rem]"
           />
         </div>
 

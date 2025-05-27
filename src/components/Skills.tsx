@@ -67,8 +67,12 @@ const SkillsCarousel: React.FC = () => {
         <Slider {...{ ...settings, autoplay: true, autoplaySpeed: 3000 }}>
           {frontendSkills.map((skill) => (
             <div key={skill.name} className="flex flex-col items-center">
-              <div className="text-4xl mb-2">{skill.icon}</div>
-              <span className="text-sm font-medium">{skill.name}</span>
+              <div className="w-16 h-16 bg-black flex items-center justify-center mb-1">
+                <span className="text-white text-3xl">{skill.icon}</span>
+              </div>
+              <span className="text-sm font-medium text-center">
+                {skill.name}
+              </span>
             </div>
           ))}
         </Slider>
@@ -78,8 +82,12 @@ const SkillsCarousel: React.FC = () => {
         <Slider {...{ ...settings, autoplay: true, autoplaySpeed: 3000 }}>
           {backendSkills.map((skill) => (
             <div key={skill.name} className="flex flex-col items-center">
-              <div className="text-4xl mb-2">{skill.icon}</div>
-              <span className="text-sm font-medium">{skill.name}</span>
+              <div className="w-16 h-16 bg-black flex items-center justify-center mb-1">
+                <span className="text-white text-3xl">{skill.icon}</span>
+              </div>
+              <span className="text-sm font-medium text-center">
+                {skill.name}
+              </span>
             </div>
           ))}
         </Slider>
