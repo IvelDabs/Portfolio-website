@@ -1,7 +1,3 @@
-# Daberechi Levi Nwachukwu's Portfolio Website
-
-This is a modern, responsive, and animated personal portfolio website for Daberechi Levi Nwachukwu, a full-stack software developer. The website showcases skills, services, projects, and provides a contact form for potential clients.
-
 ## Project Structure
 
 The project is structured as follows:
@@ -66,31 +62,3 @@ portfolio-website
 - Projects section showcasing various projects with hover effects.
 - Contact section with a form for inquiries and scheduling meetings.
 - Footer with social media links and copyright information.
-
-## Setup Instructions
-
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd portfolio-website
-   ```
-
-3. Install dependencies:
-   ```
-   npm install
-   ```
-
-4. Start the development server:
-   ```
-   npm start
-   ```
-
-5. Open your browser and go to `http://localhost:3000` to view the application.
-
-## License
-
-This project is licensed under the MIT License.
